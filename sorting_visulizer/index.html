@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sorting Visualizer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  
+</head>
+<body>
+  <div id="container">
+    <!-- Left Panel -->
+    <div id="leftPanel">
+
+      <input type="text" id="inputValues" placeholder="Enter numbers (comma-separated)">
+      
+      <button class="button" id="generateInputButton">Generate from Input</button>
+      <button class="button" id="generateRandomButton">Generate Random Array</button>
+      <button class="sort_btn" id="selectionSortButton">Selection Sort</button>
+      <button class="sort_btn" id="quickSortButton">Quick Sort</button>
+      <button class="sort_btn" id="mergeSortButton">Merge Sort</button>
+      <button class="sort_btn" id="bubbleSortButton">Bubble Sort</button>
+      <button class="sort_btn" id="heapSortButton">Heap Sort</button>
+     
+
+
+      <label>
+        Speed: 
+        <input type="range" id="speed" min="50" max="1000" value="300" step="50"> 
+      </label>
+    </div>
+
+    <!-- Right Panel -->
+    <div id="rightPanel">
+      <div id="workingContainer">
+        <div id="bars"></div>
+        <div id="working"></div>
+      </div>
+      <table id="comparisonTable">
+        <thead>
+          <tr>
+            <th>Algorithm</th>
+            <th>Time Complexity (Best)</th>
+            <th>Time Complexity (Worst)</th>
+            <th>Time Complexity (Average)</th>
+            <th>Space Complexity</th>
+            <th>Stable</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Dynamic content will be inserted here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  
+</body>
+</html>
